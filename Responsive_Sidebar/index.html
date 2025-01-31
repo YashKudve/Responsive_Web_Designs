@@ -23,9 +23,10 @@
             <li><a href="dashboard.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
 
             <li>
-                <button class="dropdown-btn"><i class="material-icons">create_new_folder</i>Create<i class="material-icons">arrow_drop_down</i></button>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn"><i class="material-icons">create_new_folder</i>Create<i class="material-icons arrow">arrow_drop_down</i></button>
+                
                 <ul class="sub-menu">
-                    <div>
+                    <div class="">
                         <li><a href="#">Folder</a></li>
                         <li><a href="#">Document</a></li>
                         <li><a href="#">Project</a></li>
@@ -35,9 +36,10 @@
             </li>
 
             <li>
-                <button class="dropdown-btn"><i class="material-icons">checklist</i>To-do List<i class="material-icons">arrow_drop_down</i></button>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn"><i class="material-icons">checklist</i>To-do List<i class="material-icons arrow">arrow_drop_down</i></button>
+
                 <ul class="sub-menu">
-                    <div>
+                    <div class="">
                         <li><a href="#">Work</a></li>
                         <li><a href="#">Private</a></li>
                         <li><a href="#">Coding</a></li>
@@ -69,4 +71,5 @@
         </div>
     </main>
 </body>
+<script type="text/javascript" src="app.js"></script>
 </html>

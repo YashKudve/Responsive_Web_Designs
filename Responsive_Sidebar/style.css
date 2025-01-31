@@ -104,9 +104,6 @@ h2,p{
     cursor: pointer;
 }
 
-/* #sidebar a span, #sidebar .dropdown-btn span{
-    flex-grow: 1;
-} */
 
 #sidebar a:hover, #sidebar .dropdown-btn:hover{
     background-color: var(--hover-clr);
@@ -122,6 +119,14 @@ h2,p{
     }
 }
 
-#sidebar .sub-menu .show{
+#sidebar .sub-menu.show{
     grid-template-rows: 1fr;
+}
+
+.dropdown-btn .arrow {
+    transition: transform 0.3s ease;
+}
+
+.dropdown-btn.rotate .arrow {
+    transform: rotate(180deg);
 }
