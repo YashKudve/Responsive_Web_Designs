@@ -61,6 +61,13 @@ h2,p{
     position: sticky;
     top: 0;
     align-self: start;
+
+    transition: 300ms ease-in-out;
+}
+
+#sidebar.close{
+    padding: 5px;
+    width: 60px;
 }
 
 #sidebar ul{
@@ -129,4 +136,21 @@ h2,p{
 
 .dropdown-btn.rotate .arrow {
     transform: rotate(180deg);
+}
+
+#sidebar .sub-menu a{
+    padding-left: 2em;
+}
+
+#toggle-btn{
+    margin-left: auto;
+    padding: .7em;
+    border: none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+}
+
+#toggle-btn:hover{
+    background-color: var(--hover-clr);
 }
